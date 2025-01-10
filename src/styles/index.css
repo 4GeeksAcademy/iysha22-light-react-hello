@@ -1,12 +1,57 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: hsl(0, 82%, 58%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
-/* 
+.semaforo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.palo {
+  width: 20px;
+  height: 150px;
+  background-color: #333;
+}
 
-*/
+.semaforo {
+  width: 100px;
+  height: 300px;
+  background-color: #333;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.luz {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #555;
+  transition: background-color 0.3s ease;
+}
+
+.roja.active {
+  background-color: #ff0000;
+  box-shadow: 0 0 20px #ff0000;
+}
+
+.amarilla.active {
+  background-color: #ffff00;
+  box-shadow: 0 0 20px #ffff00;
+}
+
+.verde.active {
+  background-color: #00ff00;
+  box-shadow: 0 0 20px #00ff00;
+}
+
